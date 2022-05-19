@@ -19,7 +19,7 @@
                             "container_class"=>"accueil__menu__nav",
                             "menu_class"=>"accueil__menu__nav__ul",)); ?>
 
-        <h2>Évenements importants</h2>
+        <h2>Ateliers</h2>
         <?php    
             wp_nav_menu(array(
                             "menu"=>"atelier",
