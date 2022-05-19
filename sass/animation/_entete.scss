@@ -1,0 +1,59 @@
+.animation {
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    &__bloc{
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 100px;
+        height : 100px;
+        border-radius: 50%;
+        background-color: hsl(39, 91%, 69%);
+        color : #fff;
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+    .animation__bloc:first-child {
+        animation : anim-entete_t 1s forwards;
+    }
+    
+    .animation__bloc:nth-child(2) {
+        animation : anim-entete_i 1s forwards;
+    }
+    
+    .animation__bloc:last-child {
+        animation : anim-entete_m 1s forwards;
+    }
+}
+
+@keyframes anim-entete_t {
+    0% {
+        transform : translateX(-100vh);  
+    }
+    100% {
+        transform : translateX(0);  
+    }
+}
+
+@keyframes anim-entete_i {
+    0% {
+        transform : translateY(-100vh);  
+    }
+    100% {
+        transform : translateY(0);  
+    }
+}
+
+@keyframes anim-entete_m {
+    0% {
+        transform : translateX(100vh);  
+    }
+    100% {
+        transform : translateX(0);  
+    }
+}

@@ -1,0 +1,47 @@
+.site__header {
+    display : flex;
+    align-items: center;
+    background-color: $color__background-header;
+    color: $color__font-header;
+    padding: 0.5rem;
+
+    .header__titre {
+      font-size: 3em;
+      font-family: $font__titre;
+    }
+    .header__description {
+      font-size: 1.5rem;
+      font-family: $font__main;
+      margin-left: 1rem;
+    }
+  }
+
+  .util {
+    display: flex;
+    flex-direction: column;
+    margin-left : auto;
+
+    &__lien{
+      display: flex;
+    }
+  }
+
+  #sidebar-entete_1 {
+    width: 100%;
+  }
+
+  .recherche__bouton {
+    background-color: hsl(39, 63%, 66%)
+  }
+
+  .recherche__bouton svg {
+    color: #fff;
+  }
+
+  header a img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 25%;
+
+    margin-left: 3rem;
+  }

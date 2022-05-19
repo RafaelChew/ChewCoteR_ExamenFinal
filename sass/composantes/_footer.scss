@@ -1,0 +1,123 @@
+.site__footer {
+    font-family: $font__titre;
+    background-color: $color__background-footer;
+    color: $color__font-footer;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+
+    &__colonne { //.site__footer__colonne
+        display :flex;
+        justify-content: space-between;
+        section { //  .site__footer__colonne  section
+          flex : 0 0 49%;
+          border : 3px solid rgb(187, 42, 42);
+        }
+
+        .footer__adresse{ //.site__footer__colonne .footer__adresse 
+         }
+
+        .footer__article {
+          padding: 1rem;
+          border-radius: 5px;
+         }
+
+         .footer__article:hover {
+          border: 3px double rgb(255, 141, 141);
+         }
+
+        .footer__lien { 
+          padding: 1rem;
+          border-radius: 5px;
+        }
+
+        .footer__lien:hover {
+          border: 3px double rgb(255, 141, 141);
+         }
+    }
+
+    &__ligne { //.site__footer__ligne
+      display : flex;
+      flex-direction : column;
+      align-items: center;
+
+      section {
+        p{
+          text-align: center;
+        }
+        
+      }
+
+      .footer__gallerie{
+        border : 3px solid rgb(187, 42, 42);
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        width: 100%;
+
+          h2{
+            text-align: center;
+          }
+      }
+
+      .footer__gallerie:hover{
+        border: 3px double rgb(255, 141, 141);
+      }
+
+      .footer__auteur {}
+      .footer__description {
+        margin-top: 3rem;
+      }
+      .footer__recherche {}
+      .footer__copyright {}
+
+    }
+  }
+
+
+
+.footer__menu { 
+  width: 90%;
+
+  &__nav{ // .footer__menu__nav
+    margin-bottom: 1rem;
+
+    &__ul{ // .footer__menu__nav__ul
+        display : flex;
+        list-style-type: none;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        .menu-item { // .site__footer__menu__ul .menu-item
+        
+          a{ // .site__footer__menu__ul .menu-item a
+            display : flex;
+            align-items: center;
+            padding : 0.2rem;
+            border-radius: 5px;
+            margin: 0.3rem;
+            font-size: 0.6rem;
+
+            @media screen and (min-width : $largeur__media--tablette)
+            {
+                font-size: 1rem;
+            }
+}
+
+              svg { // .site__footer__menu__ul .menu-item a svg
+                color: $color__link__footer;
+              }
+         
+            &:hover {
+              svg { // .site__footer__menu__ul .menu-item a svg
+                color: $color__link__footer-hover;
+              }
+            }
+          }
+        }    
+     }
+  }
+

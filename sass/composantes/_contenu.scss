@@ -1,0 +1,207 @@
+.site__main {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: $color__background-main;
+    border-radius: 5px;
+    box-shadow: rgb(8, 8, 8) 1px -1px 10px;
+    color: $color__font-main;
+
+    align-items: center;
+
+    &__recherche {
+        background-color: rgba($color__background-main, 0.1);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@keyframes anim-bouton-accueil {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.1);   
+    }
+    30% {
+        transform: scale(1);  
+    }
+    45% {
+        transform: scale(1.1);   
+    }
+    60%{
+        transform: scale(1);
+    }
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+
+    &__titre {
+        font-size: 2rem;
+        color: $color__font-main;
+        margin: 10px 0px;
+        font-family: $font__titre;
+
+        text-align: center;
+    }
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    &__cours {
+        background-repeat: no-repeat;
+        background-position: 97% 3%;
+        background-color: $color__background-cours;
+        box-shadow: rgb(8, 8, 8) 1px -1px 10px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (min-width : $largeur__media--tablette){
+            width: 45%;
+        }
+        @media screen and (min-width : $largeur__media--desktop){
+            width: 30%;
+        }
+        padding: 10px;
+    }
+}
+
+
+
+.principal {
+    color: $color__font-main;
+}
+
+.formation__cours {
+    background-color: rgba($color__background-main, 0.1);
+    margin: 1rem;
+    box-shadow: rgb(0, 0, 0);
+}
+
+.formation__cours:hover {
+    background-color: rgba($color__background-main, 0.15);
+    transform: scale(1.01);
+    box-shadow: rgb(235, 173, 93);
+    transition: 0.3s;
+    
+    @media screen and (min-width : $largeur__media--tablette){
+        transform: scale(1.1);
+    }
+    @media screen and (min-width : $largeur__media--desktop){
+        transform: scale(1.1);
+    }
+}
+
+.cours__titre {
+    font-size: 1.5rem;
+    margin: 5px 0px;
+}
+
+.cours__sigle {
+    font-size: 1.2rem;
+    color: hsl(39, 48%, 50%);
+    margin: 0;
+}
+
+.cours__nbre-heure {
+    color: hsl(39, 48%, 50%);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.cours__description {
+    font-size: 1rem;
+}
+
+.web{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
+}
+
+.jeu{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=play');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
+}
+
+.video{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=video-camera');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
+}
+
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=briefcase');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
+}
+
+.design{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=color-swatch');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
+}
+
+.creation-3d{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
+}
+
+// -------Page evenement----------------------------------------------------
+.titre__evenement{
+    font-size: 1.5rem;
+
+    @media screen and (min-width : $largeur__media--tablette){
+        font-size: 2rem;
+    }
+}
+
+.contenu__evenement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10%;
+    width: 80%;
+}
+
+.wp-block-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width : $largeur__media--tablette){
+        flex-direction: row;
+    }
+
+        .wp-block-image{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+        }
+}

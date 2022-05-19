@@ -1,0 +1,11 @@
+/**
+Galerie Gutenberg de la page j'ournee d'accueil
+*/
+.galerie {
+    width: 100%;
+    z-index: 3;
+
+    @media screen and (min-width : $largeur__media--tablette) {
+        width: 85%;
+    }
+}
