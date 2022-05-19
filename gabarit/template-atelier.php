@@ -17,7 +17,7 @@
     ?>
 
     <section class="contenu__atelier" <?php echo $categories[1]->slug;  ?>>
-
+        <?php if (have_posts()): the_post(); ?>
         <h1 class= 'titre__atelier'><?php the_title() ?></h1>
             <p class="atelier__description"><?= $descAtelier; ?></p>
             <p class="animateur"><?= $animateur; ?></p>
@@ -28,7 +28,7 @@
             <div class="heure__fin"><?= $heureFin; ?></div>
             <div class="duree__seance"><?= $duree; ?></div>
             <p class="local"><?= $local; ?></p>
-
+        <?php endif ?>
     </section>
 </main>
 <?php get_footer() ?>
